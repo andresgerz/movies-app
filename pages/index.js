@@ -3,14 +3,21 @@ import Layout from '../components/Layout'
 import axios from 'axios'
 import Head from 'next/head'
 import Link from 'next/link'
-import Movies from '../components/Movies'
 
+// Components
+import Movies from '../components/Movies'
+import Find from '../components/Find'
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 class IndexPage extends React.Component {
   
+
+  componentDidMount() {
+    //here write code
+  }
+
   static async getInitialProps({ query }) {
     const page = query.page ? Number(query.page) : 1;
     const req = await axios.get(`http://www.omdbapi.com/?apikey=8515fd33&s=batman&page=${page}`);
@@ -28,6 +35,10 @@ class IndexPage extends React.Component {
               <title>Movies App</title>
             </Head>
             <div>
+              <div>
+                <Find />
+              </div>
+
 
               <div className="movies">
                 { this.props.movies.map((p) => <Movies {...p} />) }

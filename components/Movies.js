@@ -2,8 +2,8 @@ export default ({ Title, Poster }) => {
 
     return (
         <div className="movie">
-            <div className="Poster"></div>
-            <div className="Title">{Title}</div>
+            <div className="poster"></div>
+            <div className="title">{Title}</div>
 
             <style jsx>{`
 

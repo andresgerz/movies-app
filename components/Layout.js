@@ -21,9 +21,9 @@ export default ({ children }) => (
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav>
-            <Nav.Link href="#home"><a>Home</a></Nav.Link>
-            <Nav.Link href="#contact"><a>Contact</a></Nav.Link>
-            <Nav.Link href="#about us"><a>About us</a></Nav.Link>
+            <Nav.Link href="#home">Home</Nav.Link>
+            <Nav.Link href="#contact">Contact</Nav.Link>
+            <Nav.Link href="#about us">About us</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Navbar>
